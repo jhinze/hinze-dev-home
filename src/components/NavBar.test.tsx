@@ -14,6 +14,12 @@ test('has email icon', () => {
   expect(element).toBeInTheDocument();
 });
 
+test('has blog icon', () => {
+  const { getByTestId } = render(<Navbar />);
+  const element = getByTestId("blog-icon");
+  expect(element).toBeInTheDocument();
+});
+
 test('has GitHub icon', () => {
   const { getByTestId } = render(<Navbar />);
   const element = getByTestId("github-icon");
